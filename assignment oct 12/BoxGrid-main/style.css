@@ -1,0 +1,137 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background: rgb(185, 182, 182);
+    padding: 20px;
+    
+}
+
+.header{
+    display: inline-flex;
+    margin: 10px 0;
+    align-content: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    
+
+}
+.header>a{
+    text-decoration: none;
+    background-color: white;
+    padding: 5px;
+    text-align: center;
+    box-shadow: 2px 2px 5px 5px rgb(163, 162, 162);
+    width: 100%;
+    font-weight: 600;
+}
+
+.hero{
+    display: grid;
+    grid-template-areas: "five five five six"
+                          "five five five seven";
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.five {
+    color: white;
+    grid-area: five;
+    background-image: url("./images/unsplash-NuFUbftUu_s-unsplash.jpg");
+    background-position: center;
+    background-size:cover;
+    
+    max-width: 950px;
+    min-height: 350px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    
+}
+
+.five>button{
+    border: none;
+    padding: 5px 10px;
+    width: 100px;
+    margin: 10px 0;
+}
+.but{
+    padding: 5px 20px;
+    border: none;
+    background-color: gray;
+    border-radius: 2px;
+    color: white;
+    font-weight: 600;
+    margin-bottom: -40px;
+}
+.h2{
+    font-size: 1.2rem;
+}
+
+.six{
+    grid-area: six;
+    background-color: white;
+    box-shadow: 2px 2px 5px 5px rgb(163, 162, 162);
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    
+}
+.seven{
+    grid-area: seven;
+    background-color: white;
+    box-shadow: 2px 2px 5px 5px rgb(163, 162, 162);
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+.footer{
+    min-height: 100px;
+    gap: 20px;
+    display: inline-flex;
+    width: 100%;
+    
+}
+.footerDivs{
+    background-color: white;
+    justify-content: center;
+    min-height: 200px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.h4{
+    font-weight: 600;
+}
+@media (max-width: 600px) {
+    .header{
+        flex-direction: column;
+    }
+    .hero{
+        grid-template-areas: "five"
+                             "six"
+                             "seven";
+    }
+    .six, .seven{
+        min-height: 200px;
+    }
+    .footer{
+        flex-direction: column;
+    }
+}
