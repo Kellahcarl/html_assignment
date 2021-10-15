@@ -1,28 +1,117 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Bata e-commerce !</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
-    <script src='index.js'></script>
-    
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+      
+        <!-- Glidejs -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.css" />
+      
+        <!-- Custom Stylesheet -->
+        <link rel="stylesheet" href="index.css" />
+      
+        <title>SHOP</title>
+      </head>
 <body>
     <div class="navbar">
-        <div class="logo">
-            <img src="logo&icons/batalogo.svg" width="125px">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Products</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">about</a></li>
-                <li><a href="">contact</a></li>
-            </ul>
-        </nav>
+        <header id="header" class="header">
+            <!-- Navigation -->
+            <div class="navigation">
+              <div class="container">
+                <nav class="nav__center">
+                  <div class="nav__header">
+                    <div class="nav__logo">
+                      <h1>The <span>Jitu</span></h1>
+                    </div>
+        
+                    <div class="nav__hamburger">
+                      <span>
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-menu"></use>
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+        
+                  <div class="nav__menu">
+                    <div class="menu__top">
+                      <h1 class="nav__category">Bata<span>Q</span></h1>
+                      <div class="close__toggle">
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-cross"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <ul class="nav__list">
+                      <li class="nav__item">
+                        <a href="#header" class="nav__link scroll-link">Home</a>
+                      </li>
+        
+                      <li class="nav__item">
+                        <a href="#featured" class="nav__link scroll-link">Featured</a>
+                      </li>
+        
+                      <li class="nav__item">
+                        <a href="#blog" class="nav__link scroll-link">Blog</a>
+                      </li>
+
+                      <li class="nav__item">
+                        <a href="#" class="nav__link">Login</a>
+                      </li>
+        
+                      <li class="nav__item">
+                        <a href="#" class="nav__link">Register</a>
+                      </li>
+                    </ul>
+        
+                    <ul class="nav__icons">
+                      <a href="#" class="icon__item">
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-search"></use>
+                        </svg>
+                      </a>
+        
+                      <a href="#" class="icon__item">
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-user"></use>
+                        </svg>
+                      </a>
+        
+                      <a href="#" class="icon__item">
+                        <svg>
+                          <use xlink:href="./images/sprite.svg#icon-shopping-basket"></use>
+                        </svg>
+                        <span>2</span>
+                      </a>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+            </div>
     </div>
+    <div class="carousel">
+      <button class="carousel__button"></button>
+        <div class="carousel__track-container">
+          <ul class="carousel__track">
+            <li class="carousel__slide">
+              <img src="images/bedroom/download (1).jpeg"
+            </li>
+            <li class="carousel__slide"></li>
+            <li class="carousel__slide"></li>
+          </ul>
+        </div>
+      <button class="carousel__button"></button>
+    </div>
+
+  <!-- Glidejs -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+
+  <!-- Custom Script -->
+  <script src="./js/slider.js"></script>
+  <script src="./js/index.js"></script>
 </body>
 </html>
